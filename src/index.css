@@ -38,4 +38,8 @@ input[type="text"] {
   background-color: #131a26;
   border: 0px;
   color: white;
+  text-align: right;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
