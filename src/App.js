@@ -10,7 +10,7 @@ function App() {
         <form>
           <input type="text" value={result} />
         </form>
-        <div className="keypads">
+        <div className="keypad">
           <button>Clear</button>
           <button>C</button>
           <button>&divide;</button>

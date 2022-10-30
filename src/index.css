@@ -21,7 +21,21 @@ body{
   margin: 0 auto;
   width: 256px;
   text-align: center;
-  border: 2px solid #131a26;
+  border: 5px solid #131a26;
   background-color: #131a26;
   border-radius: 5px;
+}
+
+.keypad{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  grid-auto-rows: minmax(60px, auto);
+}
+
+input[type="text"] {
+  height: 75px;
+  width: 250px;
+  background-color: #131a26;
+  border: 0px;
+  color: white;
 }
