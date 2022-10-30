@@ -12,6 +12,10 @@ function App() {
       setResult('');
   } 
 
+  const Backspace = () =>{
+      setResult(result.slice(0, result.length - 1))
+  }
+
   return (
     <>
       <div className="container">
@@ -20,7 +24,7 @@ function App() {
         </form>
         <div className="keypad">
           <button className="highlight" onClick={Clear} id="clear">Clear</button>
-          <button className="highlight" name="C" onClick={handleClick} id='backspace'>C</button>
+          <button className="highlight" name="C" onClick={Backspace} id='backspace'>C</button>
           <button className="highlight" name="/" onClick={handleClick}>&divide;</button>
           <button name="7" onClick={handleClick}>7</button>
           <button name="8" onClick={handleClick}>8</button>
