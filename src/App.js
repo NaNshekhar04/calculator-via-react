@@ -1,12 +1,16 @@
-import React from "react";
+import { useState } from "react";
+import '../src/index.css'
 
 function App() {
-  
+  const [result, setResult] = useState("")
+
   return (
     <>
-    <div className="App">
+      <div className="container">
         <form>
-          <input type="text" />
+          <input type="text" value={result} />
+        </form>
+        <div className="keypads">
           <button>Clear</button>
           <button>C</button>
           <button>&divide;</button>
@@ -25,9 +29,8 @@ function App() {
           <button>0</button>
           <button>.</button>
           <button>=</button>
-
-        </form>
-    </div>
+        </div>
+      </div>
     </>
   );
 }
